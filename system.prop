@@ -3,6 +3,7 @@ ro.config.product=x2
 ro.internal.model=Le X820
 ro.config.le_hardware_version=HW_1.0.0
 ro.le.mtpname=Le Max2
+persist.sys.le_fast_chrg_enable=1
 
 persist.sys.media.use-awesome=1
 sys.keep_app_1=com.bel.android.dspmanager
@@ -30,6 +31,7 @@ persist.qfp.ssc_fgoff_dil_s1=10
 persist.qfp.ssc_fgoff_dil_home=1
 persist.qfp.finger_evt_enabled=1
 persist.qfp.touch_enabled=1
+persist.qfp.cbge_sleep_enabled=1
 
 persist.qfp.ssc_thresh_s1=0.570
 persist.qfp.ssc_thresh_s1_off=0.0

@@ -80,3 +80,12 @@ persist.vendor.radio.domain.ps=false
 
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
+
+debug.sns.hal.ftrace=true
+debug.vendor.sns.daemon=8
+ro.vendor.sensors.wu=true
+ro.qti.sensors.wu=true
+persist.vendor.debug.sensors.hal=8
+
+
+

@@ -1,9 +1,9 @@
 [
   {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_display-caf-msm8996",
-    "target_path": "hardware/qcom/display-caf-msm8996",
-    "revision": "android-8.1"
+    "remote": "omnips",
+    "repository": "android_hardware_qcom_display_los",
+    "target_path": "hardware/qcom/display-caf-msm8996-los",
+    "revision": "los15.1"
   },
   {
     "remote": "omnips",

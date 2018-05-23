@@ -46,10 +46,10 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3154116608
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 57436708864
 
 # Lineage Hardware
-#BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 
 # SELinux
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
 -include vendor/leeco/x2/BoardConfigVendor.mk

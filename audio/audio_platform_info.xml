@@ -43,7 +43,7 @@
         <device name="SND_DEVICE_IN_AANC_HANDSET_MIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC" acdb_id="41"/>
-        <device name="SND_DEVICE_IN_HANDSET_MIC_NS" acdb_id="34"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_NS" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" acdb_id="41"/>
@@ -86,17 +86,14 @@
         <device name="SND_DEVICE_OUT_SPEAKER" backend="smartpa"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="smartpa"/>
         <device name="SND_DEVICE_OUT_VOLTE_NB_SPEAKER" backend="smartpa" />
+        <device name="SND_DEVICE_OUT_VOLTE_WB_SPEAKER" backend="smartpa" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" backend="smartpa-and-hdmi" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="smartpa-and-headphones" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="smartpa-and-usb-headphones" />
-        <device name="SND_DEVICE_OUT_HEADPHONES_44_1" backend="headphones-44.1"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones"/>
     </backend_names>
 
 
     <device_names>
-        <device name="SND_DEVICE_OUT_HEADPHONES" alias="headphones" />
-        <device name="SND_DEVICE_OUT_HEADPHONES_44_1" alias="headphones-44.1"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC" alias="speaker-stereo-dmic-ef" />
         <device name="SND_DEVICE_IN_SPEAKER_DMIC" alias="speaker-stereo-dmic-ef" />
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" alias="speaker-stereo-dmic-ef" />
@@ -105,6 +102,9 @@
         <device name="SND_DEVICE_IN_VOICE_DMIC" alias="voice-dmic-ef"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="speaker-stereo-dmic-ef" />
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" alias="speaker-stereo-dmic-ef" />
+
+        <device name="SND_DEVICE_IN_HANDSET_MIC" alias="aanc-handset-mic"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET" alias="voice-handset"/>
     </device_names>
 
 
@@ -112,7 +112,7 @@
         <param key="spkr_1_tz_name" value="wsatz.11"/>
         <param key="spkr_2_tz_name" value="wsatz.12"/>
         <param key="audio.nat.codec.enabled" value="true"/>
-        <param key="native_audio_mode" value="true"/>
+        <param key="native_audio_mode" value="src"/>
         <param key="input_mic_max_count" value="4"/>
         <!-- In the below value string, first parameter indicates size -->
         <!-- followed by perf lock options                             -->

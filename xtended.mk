@@ -22,12 +22,12 @@ $(call inherit-product, device/leeco/x2/device.mk)
 
 # Inherit some common LineageOS stuff.
 #$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 #$(call inherit-product, vendor/omni/config/common.mk)
 #$(call inherit-product, vendor/omni/config/gsm.mk)
 
 
-PRODUCT_NAME := rr_x2
+PRODUCT_NAME := xtended_x2
 PRODUCT_DEVICE := x2
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
@@ -42,3 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := LeEco/LeMax2_WW/le_x2:6.0.1/FKXOSOP5801910311S/letv10310125:user/release-keys
 
 TARGET_VENDOR := leeco
+
+XTENDED_BUILD_TYPE=OFFICIAL
